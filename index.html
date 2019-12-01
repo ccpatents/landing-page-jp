@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="generator" content="JoonDong" />
+  <meta name="author" content="JoonDong" />
+  <meta name="keywords" content="특허, 키프리스, 검색식, 연산자, 구글 특허, 미국 특허, 일본 특허, 중국 특허, CCPatents">
+  <meta name="subject" content="키프리스 특허 검색식 자동 완성" />
+  <meta name="description"
+    content="키프리스 검색식을 클릭 몇 번으로 만들 수 있습니다. 더 이상 귀찮은 연산자,괄호 신경쓸 필요가 없습니다. 생성된 검색식으로 즉시 검색을 수행합니다. 또한 구글 특허, USPTO, Espacenet 검색식으로 즉시 변경 가능합니다." />
+  <meta name="copyright" content="Copyright 2019. JoonDong. All rights reserved." />
+  <meta property="og:title" content="키프리스 특허 검색식 자동 완성" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.ccpatents" />
+  <meta property="og:image" content="https://www.ccpatents.net/icon.png?v=1" />
+  <meta property="og:site_name" content="CCPatents" />
+  <meta property="og:description"
+    content="키프리스 검색식을 클릭 몇 번으로 만들 수 있습니다. 더 이상 귀찮은 연산자,괄호 신경쓸 필요가 없습니다. 생성된 검색식으로 즉시 검색을 수행합니다. 또한 구글 특허, USPTO, Espacenet 검색식으로 즉시 변경 가능합니다." />
+
+  <title>CCPatents</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149682898-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-149682898-1');
+  </script>
+
+  <!-- Naver Web Mater Verification -->
+  <meta name="naver-site-verification" content="6bc58c2f3e8161fe8df6acec8c1529ccff8c7495" />
+
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Gothic+A1|Merriweather+Sans:400,700|Merriweather:400,300,300italic,400italic,700,700italic&display=swap"
+    rel="stylesheet">
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '461691108031344');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=461691108031344&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/grt-youtube-popup.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/native-toast.min.css">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/ccpatents.ico" type="image/x-icon">
+  <link rel="icon" href="img/ccpatents.ico" type="image/x-icon">
+
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">CCPatents</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#whyhow">특허 검색은 왜? 그리고 어떻게?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#features">다양한 기능</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#blog">블로그</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#install">다운로드</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">문의</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end">
+          <h1 class="text-uppercase text-white font-weight-bold">Click Cl!ck Patents</h1>
+          <h6 class="text-white-75 font-weight-500" data-aos="zoom-in" data-aos-duration="2000">특허·상표 검색의 혁명</h6>
+          <hr class="divider mt-3 mb-4">
+        </div>
+        <div class="row col-md-12 align-self-baseline">
+          <div class="col-md-8 col-lg-7 col-xl-7">
+            <img style="border: 0.2rem double #aaa; border-radius: 0.5rem;" class="img-fluid"
+              src="https://1.bp.blogspot.com/-T_rOOmo1XzI/XdEupQkKKII/AAAAAAAAHK0/HULrDr0rhYUFnw6Yw_qZahtz-U7i1B-EQCLcBGAsYHQ/s1600/1.gif"
+              alt="특허 검색 화면">
+          </div>
+          <div class="col-md-4 col-lg-5 col-xl-5 mt-4 mt-md-0 mt-xl-4">
+            <div data-aos="fade-left" data-aos-duration="1000">
+              <p class="text-white-75 mb-1 text-center text-md-left">
+                <b>특허</b>도 <b>외주</b>다.</p>
+              <p class="text-white-75 mt-2 text-center text-md-left">
+                특허사무소에 맡기면 끝인가요?</p>
+              <p class="text-white-75 mt-2 text-center text-md-left">
+                내 특허 내가 모르면 <b>호구</b>된다.</b></p>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
+              <p class="text-white-75 mt-2 text-center text-md-left">최소한 <b>특허 검색은 직접!</b></p>
+              <p class="text-white-75 mt-2 text-center text-md-left"><b>채점</b>은 할 수 있어야 합니다.</p>
+            </div>
+
+
+            <div id="download-button" class="text-center text-md-left" style="display: none">
+              <div class="mt-5 mt-md-4">
+                <a id="download" class="btn btn-primary btn-xl js-scroll-trigger" style="color: white;" href="#install">
+                  <span><i class="fa fa-download"></i>&nbsp;&nbsp;다운로드</span></a>
+              </div>
+            </div>
+            <div id="share-button" class="text-center" style="display: none">
+              <div class="mt-5">
+                <a id="share" class="btn btn-primary btn-xl js-scroll-trigger" href="#" style="color: white">
+                  <span><i class="fa fa-share"></i>&nbsp;공유하기</span></a>
+              </div>
+              <p class="text-white-75 mt-2" style="font-size: 1rem">윈도우10에서 다운로드 버튼으로 바뀝니다.</p>
+              <p class="text-white-75 mt-2" style="font-size: 1rem">카카오톡에 공유하고, 다음에<br>윈도우10에서 사용해 보세요.</p>
+            </div>
+
+          </div>
+          <div class="col-lg-12 text-center mt-5">
+            <a href="#whyhow" id="scroll-down" class="js-scroll-trigger ">
+              <p class="font-weight-bold mb-1" style="font-size: 1.2rem !important;">더 보기</p>
+              <i class="fas fa-angle-double-down text-wave-v"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Why Section -->
+  <section id="whyhow">
+    <div class="container py-5 bg-light">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div>
+          <h2 class="text-center mt-0">특허 검색은 왜? 그리고 어떻게?</h2>
+          <hr class="divider my-4 pb-2">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-5 px-0 pb-3">
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZlPUTIyufcc?start=268" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <p>
+            <bb>
+              <bo>|</bo>Why?
+            </bb> 특허에서 <b>사소한 실수</b> 하나가 <b>사업에 어떤 영향을 미치는지</b> 알려주는 좋은 예입니다.
+          </p>
+          <p><b>외주</b>를 맡겨보신 적이 있나요? 결과가 어땠나요? <b>기존에 정형화된 방법이 없는 분야</b>라면, <b>실망한 경우가 꽤 많았을 것</b>입니다. 외주업체가 실력과 책임감이 있다면 다행이지만, 솔직히 그런 외주업체 찾기 쉽지 않습니다.</p>
+          <p>특허도 마찬가지입니다. 명세서 작성 기준이 어느정도 정해져 있겠지만, <b>발명 분야는 특허의 개수만큼</b> 많을 것입니다. 그리고 아쉽게도 <a
+              href="https://blog.naver.com/jk_patent/220240332746" target="_blank">실력있는 변리사들은 대기업 바운드리에</a> 있을 가능성이
+            높습니다.</p>
+        </div>
+
+        <div class="col-12">
+          <p><b>외주업체를 선정</b>할 때, 필요한 기술에 대해 <b>기본적인 개념을 공부</b>하고, 업체 포트폴리오를 통해서 나에게 필요한 기술을 가진 업체를 선정한다면? 그리고 개발과정에서
+            외주업체와 <b>계속 소통</b>한다면? 분명히 <b>더 좋은 결과물</b>을 얻을 수 있을 것입니다.</p>
+          <p><b>특허도 마찬가지</b>입니다. 그리고 <b>특허에 대해 기본적인 공부</b>를 할 수 있는 <b>가장 효율적인 방법</b>은 <b2>유사특허를 검색</b2><b>해서 비교</b>해 보는
+            것입니다.</p>
+          <p>
+            <bb>
+              <bo>|</bo>How?
+            </bb>
+            <b2>특허를 검색</b2>할 때는 <b2>검색식을 사용해야</b2> 합니다. 예를 들어, 특허에서는 <b>자전거를 이륜차로 표현</b>하는 경우가 있습니다. 이륜차에는 자전거뿐만 아니라
+            <b>퀵보드, 리어카 등도 포함</b>될 수 있기 때문입니다. 즉, <b>보호 범위가 더 넓어지게</b> 됩니다. 특허가 검색되지 않기 위해 말장난을 한 것일 수도 있지만, 가능한 넓은 범위를
+            보장받기 위한 <b>실무자들의 노력</b>이 담겨있다고 보는게 맞을 겁니다. 그래서 <b2>다양한 동의어가 포함되고, 조건이 설정된 검색식을 사용해야</b2> 합니다.
+          </p>
+          <p class="mb-lg-1" onclick="alert('준비 중입니다.')"><a href="#" target="_blank">내 발명을 검색식으로 만드는 방법>></a></p>
+          <p class="mb-lg-1" onclick="alert('준비 중입니다.')"><a href="#" target="_blank">검색 결과 줄이는 방법>></a></p>
+          <p onclick="alert('준비 중입니다.')"><a href="#" target="_blank">내 상표를 검색식으로 만드는 방법>></a></p>
+        </div>
+      </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <div class="container px-0 bg-white">
+      <div class="row no-gutters">
+        <div class="col-md-4 py-5 nav-link-wrap">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical"
+            data-aos="fade-up" data-aos-duration="800">
+            <a class="nav-link px-4 active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab"
+              aria-controls="v-pills-1" aria-selected="true"><span class="mr-3 flaticon-ideas"></span> 직관성</a>
+
+            <a class="nav-link px-4" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab"
+              aria-controls="v-pills-2" aria-selected="false"><span class="mr-3 flaticon-flasks"></span> 상표 검색 (new)</a>
+
+            <a class="nav-link px-4" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab"
+              aria-controls="v-pills-2" aria-selected="false"><span class="mr-3 flaticon-flasks"></span> 동의어 사전</a>
+
+            <a class="nav-link px-4" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab"
+              aria-controls="v-pills-3" aria-selected="false"><span class="mr-3 flaticon-analysis"></span> 다양한 플랫폼
+              지원</a>
+
+            <a class="nav-link px-4" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab"
+              aria-controls="v-pills-4" aria-selected="false"><span class="mr-3 flaticon-web-design"></span> 향상된
+              검색기록</a>
+          </div>
+        </div>
+
+        <div class="col-md-8 p-4 pt-md-4 d-flex align-items-center">
+          <div class="tab-content pl-md-3" id="v-pills-tabContent" data-aos="fade-up" data-aos-duration="800">
+
+            <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+              <h2 class="mb-4"><span class="divider-v">|</span><span> 직관성</span></h2>
+              <div class="row d-flex align-items-center justify-content-center">
+                <img class="col-lg-12 img-fluid popup-img"
+                  src="https://1.bp.blogspot.com/-AGZolX0dOPg/Xd7RZR2XTLI/AAAAAAAAHUU/2f5fEEi0scAJELA5Ya-pAiUBIme5teFbwCLcBGAsYHQ/s1600/1.png"
+                  alt="특허 검색 화면">
+              </div>
+              <p class="text-right text-wave-h" style="font-size: 12px">이미지를 클릭하여 확대할 수 있습니다.</p>
+              <p>
+                CCPatents는 검색식을 만드는 과정을 <b1>키워드 입력</b1> - <b2>동의어 입력</b2> - <b3>검색식
+                  생성</b3> 단계로 분리하고, 모든 단어를 태그
+                처리하여 <b>사용자가 단어에만 집중</b>할 수 있도록 하였습니다.
+              </p>
+              <p>검색식도 직접 입력할 필요 없이 <b>특허 검색</b> 버튼을 누르면, <b>당신이 선택한 검색 서비스 홈페이지에 자동으로
+                  접속하여 검색</b>을 수행합니다.
+              </p>
+              <P>그리고 기존의 필드별 검색식 입력 방식이 아닌, <b>키워드별 필드 선택 방식</b>을 채택하였습니다.</P>
+              <!--<p><a href="#" class="btn btn-primary px-3 py-2">More</a></p>-->
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+              <h2 class="mb-4"><span class="divider-v">|</span><span> 상표 검색</span></h2>
+              <div class="row d-flex align-items-center justify-content-center">
+                <img class="col-lg-11 img-fluid popup-img"
+                  src="https://1.bp.blogspot.com/-FcJTiwYhFCI/XdEyn8wjKeI/AAAAAAAAHLQ/LxtLAwRhsJwh1k1R6Wydiz545tdT12RCQCLcBGAsYHQ/s1600/2.png"
+                  alt="상표 검색">
+              </div>
+              <p class=" text-wave-h" style="font-size: 12px">이미지를 클릭하여 확대할 수 있습니다.</p>
+              <p><b>상표 검색에도 검색식이 사용</b>된다는 걸 알고 계신가요?</p>
+              <p><b>권리범위가 가장 넓은 문자상표</b>의 경우, 비슷한 소리만 나도 침해가 될 수 있기 때문에, <b>동음어를 사용</b>하여 검색해야 합니다.</p>
+              <p>CCPatents는 <b>키프리스의 상표 검색식을 생성</b>할 수 있고, '특허 검색' 버튼을 누르면, 특허 검색과 마찬가지로 <b2>즉시 검색 결과가 브라우저에 표시</b2>됩니다.
+              </p>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+              <h2 class="mb-4"><span class="divider-v">|</span><span> 동의어 사전</span></h2>
+              <img class="col-lg-12 img-fluid popup-img"
+                src="https://1.bp.blogspot.com/-ZKN8yDqL9_o/XdEyn2fk29I/AAAAAAAAHLM/BGVjnK3YeJ8jpfsk08abmTcsB1Vsl-I9QCLcBGAsYHQ/s1600/3.png"
+                alt="동의어 데이터베이스 구성">
+              <p class=" text-wave-h" style="font-size: 12px">이미지를 클릭하여 확대할 수 있습니다.</p>
+              <p>
+                CCPatents는 워드넷과 키프리스 동의어 사전을 내장하고 있지만, <b>원하는 동의어가 자동으로 검색되지 않거나,
+                  필요 없는 단어가 검색될 수</b> 있습니다. 이 경우 단어를 직접 추가하거나 삭제할 수 있습니다.
+              </p>
+              <p>
+                <b>추가된 동의어</b>는 자동으로 '나의 데이터베이스'에 저장되며, <b>다음 검색에서 자동으로 검색</b>되게 할 수 있습니다.
+              </p>
+              <p>반대로 <b>삭제된 단어</b>는 자동으로 '필터 데이터베이스'에 저장되며, <b>다음 검색에서 자동으로 차단</b>되게 할 수 있습니다.</p>
+              <!--<p><a href="#" class="btn btn-primary px-3 py-2">More</a></p>-->
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+              <h2 class="mb-4"><span class="divider-v">|</span><span> 다양한 플랫폼 지원</span></h2>
+              <div class="col-lg-12 d-flex justify-content-center mb-4">
+                <img class="img-fluid" width="40%"
+                  src="https://1.bp.blogspot.com/-fg9fsytMXnY/XdEyohJkLgI/AAAAAAAAHLU/s7OB9WmK_OQTJIXsJb3GqS0A6yuj7oNbgCLcBGAsYHQ/s1600/4.png"
+                  alt="키프리스, 구글 특허, USPTO, Espacnet, J-PlatPat">
+              </div>
+              <p>미국, 한국, 일본 등 세계 주요국의 특허청은 모두 특허 검색 서비스를 제공하고 있습니다.</p>
+              <p>미국의 경우 USPTO이고, 한국은 그 유명한 <b>키프리스</b>가 있습니다.</p>
+              <p>민간 기업에선 17개 특허청의 약 90억 건의 특허 DB를 제공하는 <b>구글 특허</b>가 있습니다.</p>
+              <P>
+                CCPatents는 입력된 단어를 기반으로 <b>당신이 선택한 서비스의 검색식으로 즉시 변경 및 생성</b>할 수
+                있습니다.
+              </p>
+              <p>또한 각 서비스마다 다르게 적용되는 규칙도 자동으로 고려하며, 사용자에게 알려줍니다.</p>
+              <!--<p><a href="#" class="btn btn-primary px-3 py-2">More</a></p>-->
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
+              <h2 class="mb-4"><span class="divider-v">|</span><span> 향상된 검색기록</span></h2>
+              <div class="row">
+                <div class="col-lg-6">
+                  <img class="img-fluid popup-img"
+                    src="https://1.bp.blogspot.com/-i8aHbSav3qY/XdEyoyGcN8I/AAAAAAAAHLY/9fRDh22cPHsSDEbPc1iEKNaWBASEEWR4gCLcBGAsYHQ/s1600/5.png"
+                    alt="검색 기록">
+                </div>
+                <div class="col-lg-6">
+                  <img class="img-fluid popup-img"
+                    src="https://1.bp.blogspot.com/-v5xLB6Xx-Qs/XdEypNk0XXI/AAAAAAAAHLc/0K8klZoSHNYJGgVyKhH8epCwpTukItV5wCLcBGAsYHQ/s1600/6.png"
+                    alt="검색 기록">
+                </div>
+              </div>
+              <p class="text-right mt-2 text-wave-h" style="font-size: 12px">이미지를 클릭하여 확대할 수 있습니다.</p>
+              <p>유사특허가 많이 포함된 결과를 찾아내는 <b>검색식은 한 번에 만들어지지 않습니다.</b>
+              </p>
+              <p>그리고 기술의 구성요소를 분리하여 검색해야 할 수도 있습니다.</p>
+              <p>
+                CCPatents는 <b>검색식을 자동으로 저장</b>할 수 있고, 각 검색식 마다
+                <b>메모</b> 및 <b>평가</b>할 수 있는 기능을 제공합니다.
+              </p>
+              <p>이 외에도 <b>복구</b>, 복사, <b>재검색</b> 등의 기능도 제공합니다.</p>
+              <!--<p><a href="#" class="btn btn-primary px-3 py-2">More</a></p>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="py-5 bg-light mt-0" id="blog">
+    <div class="container" data-aos="fade-up" data-aos-duration="800">
+      <h2 class="text-center mt-0">블로그</h2>
+      <hr class="divider my-4 pb-2">
+      <div class="row">
+
+        <div class="col-md-12">
+          <div class="carousel-posts owl-carousel">
+
+            <div class="item">
+              <div class="post">
+                <div class="img">
+                  <img src="img/blog/post-1.jpg" class="img-fluid" alt="검색식 사용">
+                  <div class="text px-4">
+                    <a href="https://blog.naver.com/ccpatents/221714991507" target="_blank">
+                      <h3>왜 검색식을 사용해야 할까?</h3>
+                      <span>더 보기</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="post">
+                <div class="img">
+                  <img src="img/blog/post-4.png" class="img-fluid" alt="키프리스 검색 방법">
+                  <div class="text px-4">
+                    <a href="https://blog.naver.com/ccpatents/221677145269" target="_blank">
+                      <h3>키프리스 검색 방법</h3>
+                      <span>더 보기</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="post">
+                <div class="img">
+                  <img src="img/blog/post-5.png" class="img-fluid" alt="구글 특허 조회 방법">
+                  <div class="text px-4">
+                    <a href="https://blog.naver.com/ccpatents/221680490250" target="_blank">
+                      <h3>구글 특허 조회 방법</h3>
+                      <span>더 보기</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="post">
+                <div class="img">
+                  <img src="img/blog/post-6.png" class="img-fluid" alt="키프리스, 구글 특허 비교">
+                  <div class="text px-4">
+                    <a href="https://blog.naver.com/ccpatents/221682474929" target="_blank">
+                      <h3>키프리스 vs 구글 특허</h3>
+                      <span>더 보기</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Install Section -->
+  <section id="install">
+    <div class="container bg-white px-0">
+      <div class="row no-gutters" data-aos="fade-up" data-aos-duration="500">
+        <div class="col-lg-6 order-2 order-lg-1">
+          <div class="video-container">
+            <iframe id="install-video" width="560" height="315" src="https://www.youtube.com/embed/uO4fLBi7Cnc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-lg-6 px-3 order-1 order-lg-2">
+          <h2 class="py-3" n="500" data-aos-delay="100"><span class="divider-v">|</span> <span>다운로드</span></h2>
+          <p id="win10_warn" style="display: none;"><b1>윈도우10 전용 프로그램입니다. 윈도우10에서 스토어 버튼이 나타납니다.</b1></p>
+          <p><b>마이크로소프트 계정이 없어도</b> 설치할 수 있습니다.</p>
+          <p class="pb-3 pb-md-1"><b>로그인 창</b>이 뜨지만 그냥 <b>닫아도 설치가 진행</b>됩니다.</p>
+          <!--<p>마이크로소프트 스토어에 <b>처음 접속</b>하면 <b>장치 간에 사용 알림</b>이 나타날 수 있지만, <b>관심 없음 버튼</b>을 클릭하면 설치가 진행됩니다.</p>-->
+          <div id="store-button"  class="row" data-aos="fade-up" data-aos-duration="500">
+            <a class="col-6 col-md-5 col-lg-7 pb-3 pb-lg-0" href="ms-windows-store://pdp/?productid=9N798V33QDF8"><img
+            class="img-fluid" width="100%" src="img/store.png" alt="다운로드 버튼"></a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="img" id="contact">
+    <div class="container bg-white px-md-0">
+      <div class="row d-flex">
+        <div class="col-md-6 col-lg-5 d-flex" data-aos="fade-up" data-aos-duration="800">
+          <div class="img d-flex align-self-stretch align-items-center"
+            style="background-image:url(https://1.bp.blogspot.com/-zXFa98qyVS0/XdKDcLE2z6I/AAAAAAAAHL4/a5fSOJ6xp4srn-QkSIKxyYZXDsjZIvhsACLcBGAsYHQ/s1600/contact.jpg);">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-7 pl-lg-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+          <div class="pt-5 px-2">
+            <div class="row justify-content-start pb-3">
+              <div class="col-lg-8">
+                <h2 class="pb-3"><span class="divider-v">|</span> <span>문의</span></h2>
+                <p>추가하고 싶은 기능이 있거나,<br>버그 발견시 언제든지 문의해 주세요.</p>
+                <div class="contact-info">
+                  <form action="https://script.google.com/macros/s/AKfycbw15FE1tciA0ToUN5xdQzkcj_SgoGam44xIMaZ82A/exec"
+                    method="POST" class="pt-2 w-100 gform pure-form pure-form-stacked">
+                    <div class="form-group">
+                      <input name="name" class="form-control" required placeholder="이름">
+                    </div>
+                    <div class="form-group">
+                      <input name="email" class="form-control" type="email" required
+                        placeholder="이메일 (user@example.com)">
+                    </div>
+                    <div class="form-group">
+                      <input name="subject" class="form-control" placeholder="제목">
+                    </div>
+                    <div class="form-group">
+                      <textarea name="message" cols="30" rows="7" class="form-control" required style="resize: none;"
+                        placeholder="내용"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <button class="btn btn-primary py-3 px-5" style="color:white">메일 보내기</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="small text-center text-muted">Copyright 2019. JoonDong. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="js/grt-youtube-popup.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script data-cfasync="false" src="js/form-submission-handler.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.popupimg.min.js"></script>
+  <script src="js/native-toast.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.js" type="text/babel" data-presets="es2015,stage-2"></script>
+
+</body>
+
+</html>
